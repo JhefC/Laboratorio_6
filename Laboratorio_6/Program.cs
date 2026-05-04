@@ -2,28 +2,31 @@
 
 class Programa
 {
-    // Variable global para el límite (usamos static para que sea accesible)
+    // Variable global para el límite
     static double LIMITE_GLOBAL = 80;
 
     static void Main()
     {
         MostrarEncabezado();
 
-        // 1. Ingresar
         double temp = Ingresar();
 
-        // 2. Validar
         if (Validar(temp))
         {
-            // 3. Evaluar
-            string estado = Evaluar(temp);
+            // Evaluación usando el límite global (80)
+            string estadoGlobal = Evaluar(temp);
+            Console.WriteLine("--- Evaluación con Límite Global (80) ---");
+            Mostrar(estadoGlobal);
 
-            // 4. Mostrar
-            Mostrar(estado);
+            // Evaluación usando el nuevo método con un límite personalizado (ejemplo: 100)
+            int limitePersonalizado = 100;
+            string estadoPersonalizado = Evaluar(temp, limitePersonalizado);
+            Console.WriteLine($"--- Evaluación con Límite Personalizado ({limitePersonalizado}) ---");
+            Mostrar(estadoPersonalizado);
         }
     }
 
-    // --- MÉTODOS UNIFICADOS ---
+    // --- MÉTODOS ---
 
     static void MostrarEncabezado()
     {
@@ -33,12 +36,11 @@ class Programa
     static double Ingresar()
     {
         Console.Write("Ingrese temperatura: ");
-        // Usamos TryParse para que el programa no falle si escriben letras
         if (double.TryParse(Console.ReadLine(), out double temperatura))
         {
             return temperatura;
         }
-        return -1; // Retornamos un valor que falle en la validación
+        return -1;
     }
 
     static bool Validar(double temp)
@@ -51,12 +53,21 @@ class Programa
         return true;
     }
 
+    // Versión 1: Usa la variable global
     static string Evaluar(double temp)
     {
         if (temp > LIMITE_GLOBAL) 
             return "ALERTA";
         else 
             return "NORMAL";
+    }
+
+    // Versión 2: NUEVO MÉTODO (Sobrecarga que recibe un límite específico)
+    static string Evaluar(double temp, int limite)
+    {
+        if (temp > limite)
+            return "ALERTA";
+        return "NORMAL";
     }
 
     static void Mostrar(string resultado)
