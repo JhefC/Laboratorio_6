@@ -2,52 +2,65 @@
 
 class Programa
 {
-    // Variable global para el límite
-    static int LIMITE_GLOBAL = 80;
+    // Variable global para el límite (usamos static para que sea accesible)
+    static double LIMITE_GLOBAL = 80;
+
+    static void Main()
+    {
+        MostrarEncabezado();
+
+        // 1. Ingresar
+        double temp = Ingresar();
+
+        // 2. Validar
+        if (Validar(temp))
+        {
+            // 3. Evaluar
+            string estado = Evaluar(temp);
+
+            // 4. Mostrar
+            Mostrar(estado);
+        }
+    }
+
+    // --- MÉTODOS UNIFICADOS ---
 
     static void MostrarEncabezado()
     {
-        Console.WriteLine("==== SISTEMA INDUSTRIAL ====");
+        Console.WriteLine("==== SISTEMA INDUSTRIAL DE MONITOREO ====");
     }
 
-    // Primer método adicional: Valida que no sea negativa
-    static bool ValidarTemperatura(double temp)
+    static double Ingresar()
+    {
+        Console.Write("Ingrese temperatura: ");
+        // Usamos TryParse para que el programa no falle si escriben letras
+        if (double.TryParse(Console.ReadLine(), out double temperatura))
+        {
+            return temperatura;
+        }
+        return -1; // Retornamos un valor que falle en la validación
+    }
+
+    static bool Validar(double temp)
     {
         if (temp < 0)
         {
-            Console.WriteLine("Error: valor inválido");
+            Console.WriteLine("Error: Temperatura inválida (no puede ser menor a 0)");
             return false;
         }
         return true;
     }
 
-    // Segundo método adicional: Devuelve el estado directamente como texto
-    static string EvaluarTemperatura(double temp)
+    static string Evaluar(double temp)
     {
-        if (temp > LIMITE_GLOBAL)
+        if (temp > LIMITE_GLOBAL) 
             return "ALERTA";
-        return "NORMAL";
+        else 
+            return "NORMAL";
     }
 
-    static void Main()
+    static void Mostrar(string resultado)
     {
-        MostrarEncabezado();
-        Console.Write("Ingrese temperatura: ");
-        
-        // Usamos TryParse para evitar que el programa se cierre si ingresan letras
-        if (double.TryParse(Console.ReadLine(), out double temp))
-        {
-            // Primero validamos si el rango es correcto (no negativo)
-            if (ValidarTemperatura(temp))
-            {
-                // Si es válido, evaluamos y mostramos el resultado
-                string resultado = EvaluarTemperatura(temp);
-                Console.WriteLine("Estado: " + resultado);
-            }
-        }
-        else
-        {
-            Console.WriteLine("Error: Debe ingresar un número válido.");
-        }
+        Console.WriteLine("Estado actual: " + resultado);
     }
 }
