@@ -1,0 +1,14 @@
+C:\Users\Asus\Documents\aaa\Fundamentos de la Programacion\Semana 6\Laboratio_6\Laboratorio_6\bin\Debug\net10.0\Laboratorio_6.exe
+C:\Users\Asus\Documents\aaa\Fundamentos de la Programacion\Semana 6\Laboratio_6\Laboratorio_6\bin\Debug\net10.0\Laboratorio_6.deps.json
+C:\Users\Asus\Documents\aaa\Fundamentos de la Programacion\Semana 6\Laboratio_6\Laboratorio_6\bin\Debug\net10.0\Laboratorio_6.runtimeconfig.json
+C:\Users\Asus\Documents\aaa\Fundamentos de la Programacion\Semana 6\Laboratio_6\Laboratorio_6\bin\Debug\net10.0\Laboratorio_6.dll
+C:\Users\Asus\Documents\aaa\Fundamentos de la Programacion\Semana 6\Laboratio_6\Laboratorio_6\bin\Debug\net10.0\Laboratorio_6.pdb
+C:\Users\Asus\Documents\aaa\Fundamentos de la Programacion\Semana 6\Laboratio_6\Laboratorio_6\obj\Debug\net10.0\Laboratorio_6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Documents\aaa\Fundamentos de la Programacion\Semana 6\Laboratio_6\Laboratorio_6\obj\Debug\net10.0\Laboratorio_6.AssemblyInfoInputs.cache
+C:\Users\Asus\Documents\aaa\Fundamentos de la Programacion\Semana 6\Laboratio_6\Laboratorio_6\obj\Debug\net10.0\Laboratorio_6.AssemblyInfo.cs
+C:\Users\Asus\Documents\aaa\Fundamentos de la Programacion\Semana 6\Laboratio_6\Laboratorio_6\obj\Debug\net10.0\Laboratorio_6.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Documents\aaa\Fundamentos de la Programacion\Semana 6\Laboratio_6\Laboratorio_6\obj\Debug\net10.0\Laboratorio_6.dll
+C:\Users\Asus\Documents\aaa\Fundamentos de la Programacion\Semana 6\Laboratio_6\Laboratorio_6\obj\Debug\net10.0\refint\Laboratorio_6.dll
+C:\Users\Asus\Documents\aaa\Fundamentos de la Programacion\Semana 6\Laboratio_6\Laboratorio_6\obj\Debug\net10.0\Laboratorio_6.pdb
+C:\Users\Asus\Documents\aaa\Fundamentos de la Programacion\Semana 6\Laboratio_6\Laboratorio_6\obj\Debug\net10.0\Laboratorio_6.genruntimeconfig.cache
+C:\Users\Asus\Documents\aaa\Fundamentos de la Programacion\Semana 6\Laboratio_6\Laboratorio_6\obj\Debug\net10.0\ref\Laboratorio_6.dll
