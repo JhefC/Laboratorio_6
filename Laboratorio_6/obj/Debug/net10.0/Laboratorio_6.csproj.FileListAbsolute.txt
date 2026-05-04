@@ -12,3 +12,4 @@ C:\Users\Asus\Documents\aaa\Fundamentos de la Programacion\Semana 6\Laboratio_6\
 C:\Users\Asus\Documents\aaa\Fundamentos de la Programacion\Semana 6\Laboratio_6\Laboratorio_6\obj\Debug\net10.0\Laboratorio_6.pdb
 C:\Users\Asus\Documents\aaa\Fundamentos de la Programacion\Semana 6\Laboratio_6\Laboratorio_6\obj\Debug\net10.0\Laboratorio_6.genruntimeconfig.cache
 C:\Users\Asus\Documents\aaa\Fundamentos de la Programacion\Semana 6\Laboratio_6\Laboratorio_6\obj\Debug\net10.0\ref\Laboratorio_6.dll
+C:\Users\Asus\Documents\aaa\Fundamentos de la Programacion\Semana 6\Laboratio_6\Laboratorio_6\obj\Debug\net10.0\Laboratorio_6.sourcelink.json
